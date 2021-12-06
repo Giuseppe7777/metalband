@@ -4,7 +4,7 @@ body {
     font-family: "Open sans", sans-serif;
     font-size: 1em;
     color: #eee;
-    background: url('../../img/bg.png') #383838;
+    background: url('../img/bg.png') #383838;
 }
 .container {
     width: 100%;
@@ -52,7 +52,7 @@ button:hover {
 // HEADER ===========================================================================
 
 header {
-    background: url('../../img/bg-01.jpg') center/cover no-repeat #666;
+    background: url('../img/bg-01.jpg') center/cover no-repeat #666;
     min-height: 280px;
     padding: 150px 0px 50px 0px;
     #topbar {
@@ -115,16 +115,16 @@ header {
         box-shadow: 0px 3px 3px 0px #212121;
         //background-blend-mode: multiply;
         &.madrid {
-            background: url('../../img/tour/madrid.jpg') center/cover no-repeat #666;
+            background: url('../img/tour/madrid.jpg') center/cover no-repeat #666;
         }
         &.turin {
-            background: url('../../img/tour/turin.jpg') center/cover no-repeat #666;
+            background: url('../img/tour/turin.jpg') center/cover no-repeat #666;
         }
         &.hamburg {
-            background: url('../../img/tour/hamburg.jpg') center/cover no-repeat #666;
+            background: url('../img/tour/hamburg.jpg') center/cover no-repeat #666;
         }
         &.krakow {
-            background: url('../../img/tour/krakow.jpg') center/cover no-repeat #666;
+            background: url('../img/tour/krakow.jpg') center/cover no-repeat #666;
         }
 
         .tour-town {
@@ -177,7 +177,7 @@ header {
 //SUBSCRIBE=========================================================================
 
 #subscribe {
-    background: url('../../img/bg-02.jpg') center/cover no-repeat #666;
+    background: url('../img/bg-02.jpg') center/cover no-repeat #666;
     padding: 40px 0px 80px 0px;
     margin-top: 40px;
     text-align: center;

@@ -2,7 +2,7 @@ body {
   font-family: "Open sans", sans-serif;
   font-size: 1em;
   color: #eee;
-  background: url("../../img/bg.png") #383838;
+  background: url("../img/bg.png") #383838;
 }
 
 .container {
@@ -53,7 +53,7 @@ button:hover {
 }
 
 header {
-  background: url("../../img/bg-01.jpg") center/cover no-repeat #666;
+  background: url("../img/bg-01.jpg") center/cover no-repeat #666;
   min-height: 280px;
   padding: 150px 0px 50px 0px;
 }
@@ -117,19 +117,19 @@ header .container .button {
 }
 
 #tour .tour-card.madrid {
-  background: url("../../img/tour/madrid.jpg") center/cover no-repeat #666;
+  background: url("../img/tour/madrid.jpg") center/cover no-repeat #666;
 }
 
 #tour .tour-card.turin {
-  background: url("../../img/tour/turin.jpg") center/cover no-repeat #666;
+  background: url("../img/tour/turin.jpg") center/cover no-repeat #666;
 }
 
 #tour .tour-card.hamburg {
-  background: url("../../img/tour/hamburg.jpg") center/cover no-repeat #666;
+  background: url("../img/tour/hamburg.jpg") center/cover no-repeat #666;
 }
 
 #tour .tour-card.krakow {
-  background: url("../../img/tour/krakow.jpg") center/cover no-repeat #666;
+  background: url("../img/tour/krakow.jpg") center/cover no-repeat #666;
 }
 
 #tour .tour-card .tour-town {
@@ -183,7 +183,7 @@ header .container .button {
 }
 
 #subscribe {
-  background: url("../../img/bg-02.jpg") center/cover no-repeat #666;
+  background: url("../img/bg-02.jpg") center/cover no-repeat #666;
   padding: 40px 0px 80px 0px;
   margin-top: 40px;
   text-align: center;
