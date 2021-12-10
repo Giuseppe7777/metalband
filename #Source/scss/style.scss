@@ -1,10 +1,10 @@
-// General
+// General ========================================================================================
 
 body {
-    font-family: "Open sans", sans-serif;
     font-size: 1em;
-    color: #eee;
-    background: url('../img/bg.png') #383838;
+    font-family: "Open Sans", sans-serif;
+    background: url("../img/bg.png") #383838;
+    color: #fafafa;
 }
 .container {
     width: 100%;
@@ -13,18 +13,8 @@ body {
     margin-right: auto;
 }
 a {
+    color: #fafafa;
     text-decoration: none;
-    color: #fff;
-}
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-}
-h2 {
-    font-size: 32px;
-    text-align: center;
-    margin: 40px 0px 40px 0px;
 }
 img {
     display: block;
@@ -34,69 +24,80 @@ img {
 
 .button,
 button {
-    display: inline-block;
-    font-family: "Open sans", sans-serif;
     border: 0;
-    background-image: linear-gradient(145deg, #dd0000, #ff3670);
-    color: #fff;
-    margin: 20px 0px 20px 0px;
+    display: inline-block;
+    background: linear-gradient(145deg, #e00408, #fc4c7b);
     text-transform: uppercase;
     font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+    color: #fafafa;
+    margin: 20px 0px 20px 0px;
+    &:hover {
+        background: linear-gradient(145deg, #fc4c7b, #e00408);
+    }
 }
 
-.button:hover,
-button:hover {
-    background-image: linear-gradient(145deg, #ff3670, #dd0000);
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
 }
 
-// HEADER ===========================================================================
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+// HEADER =========================================================================================
 
 header {
-    background: url('../img/bg-01.jpg') center/cover no-repeat #666;
+    background: url("../img/bg-01.jpg") center/cover no-repeat #666;
+    padding: 150px 0px 80px 0px;
     min-height: 280px;
-    padding: 150px 0px 50px 0px;
-    #topbar {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0px;
-        z-index: 999;
-    }
 
-    .menu {
-        li {
-            display: inline-block;
-            text-transform: uppercase;
-            a {
-                padding: 20px;
-                display: block;
-                &:hover {
-                    background-color: rgba(243, 36, 74, 0.7);
+    .topbar {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        .menu {
+            li {
+                display: inline-block;
+                text-transform: uppercase;
+                a {
+                    display: block;
+                    padding: 20px;
+                    &:hover {
+                        background: #b91a34;
+                    }
                 }
             }
         }
     }
-
-    .container {
-        h1 {
-            font-family: "Metal Mania", cursive;
-            text-align: center;
-            font-size: 5.6em;
-            padding-top: 0;
-            color: #fafafa;
-        }
-        .button {
-            display: block;
-            margin: 60px auto;
-            width: 100%;
-            max-width: 320px;
-            text-align: center;
-            padding: 20px 0px;
-        }
+    .red {
+        background: #e00408a9;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 54px;
+        font-size: 5.6em;
+        padding-top: 0;
+        font-family: "Metal Mania", cursive;
+    }
+    .button {
+        display: block;
+        margin: 60px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+        padding: 20px 0px;
     }
 }
 
-//TOUR========================================================================================
+// TOUR ===========================================================================================
 
 #tour {
     &:after {
@@ -106,27 +107,13 @@ header {
         clear: both;
     }
     .tour-card {
+        float: left;
         width: 220px;
         height: 240px;
         margin: 0px 10px 20px 10px;
-        float: left;
         box-sizing: border-box;
-        padding: 40px 10px 20px;
-        box-shadow: 0px 3px 3px 0px #212121;
-        //background-blend-mode: multiply;
-        &.madrid {
-            background: url('../img/tour/madrid.jpg') center/cover no-repeat #666;
-        }
-        &.turin {
-            background: url('../img/tour/turin.jpg') center/cover no-repeat #666;
-        }
-        &.hamburg {
-            background: url('../img/tour/hamburg.jpg') center/cover no-repeat #666;
-        }
-        &.krakow {
-            background: url('../img/tour/krakow.jpg') center/cover no-repeat #666;
-        }
-
+        padding: 39px 10px 64px;
+        box-shadow: 0 3px 3px 0 #212121;
         .tour-town {
             font-size: 1.2em;
             margin-bottom: 10px;
@@ -134,7 +121,7 @@ header {
         .tour-place {
             margin-bottom: 10px;
             &:before {
-                margin-right: 5px;
+                padding-right: 7px;
             }
         }
         .tour-date {
@@ -143,26 +130,39 @@ header {
         }
         .button {
             display: block;
-            max-width: 140px;
-            margin: 17px auto;
             text-align: center;
+            max-width: 140px;
             padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
+    }
+    .madrid {
+        background: url("../img/tour/madrid.jpg") center/cover no-repeat #666;
+    }
+    .turin {
+        background: url("../img/tour/turin.jpg") center/cover no-repeat #666;
+    }
+    .hamburg {
+        background: url("../img/tour/hamburg.jpg") center/cover no-repeat #666;
+    }
+    .krakow {
+        background: url("../img/tour/krakow.jpg") center/cover no-repeat #666;
     }
 }
 
-//GALLERY=========================================================================
+// GALLERY ========================================================================================
 
 #gallery {
-    &:after {
+    &::after {
         content: "";
         display: block;
         height: auto;
         clear: both;
     }
     .photo {
-        width: 33.3333%;
         float: left;
+        width: 33.333%;
         padding: 10px;
         box-sizing: border-box;
         &:hover {
@@ -174,50 +174,66 @@ header {
     }
 }
 
-//SUBSCRIBE=========================================================================
+// SUBSCRIBE ======================================================================================
 
 #subscribe {
-    background: url('../img/bg-02.jpg') center/cover no-repeat #666;
-    padding: 40px 0px 80px 0px;
-    margin-top: 40px;
+    background: url("../img/bg-02.jpg") center/cover #666;
+    padding: 76px 0px 52px 0px;
     text-align: center;
-    button {
-        margin: 0;
-        height: 42px;
-        padding: 0px 20px 0px 20px;
-    }
-    input {
-        border: 0;
-        height: 40px;
-        background-color: #fafafa;
-        padding-left: 10px;
-        font-size: 1.2em;
-        font-family: "Open Sans", sans-serif;
-    }
+    margin-top: 40px;
     .pitch {
         margin-bottom: 20px;
         p {
             line-height: 1.6;
         }
     }
+    input {
+        border: 0;
+        font-size: 1.2em;
+        padding-left: 10px;
+        font-family: "Open Sans", sans serif;
+        height: 40px;
+        background-color: #fafafa;
+    }
+    button {
+        margin: 0;
+        font-size: 1.2em;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 42px;
+    }
 }
 
-//FOOTER=============================================================================
+// FOOTER =========================================================================================
 
 footer {
-    padding: 30px 0px 30px 0px;
     text-align: center;
+    padding: 26px 0px 24px 0px;
+    background-color: #222;
+    background-image: url("../img/bg.png");
     .social {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         a {
-            margin: 0px 5px 0px 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 5px;
             &:hover {
-                background-color: rgba(243, 36, 74, 0.7);
+                background: #b91a34;
             }
         }
     }
     .copyright {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 980px) {
+    #tour {
+        text-align: center;
+        .tour-card {
+            float: none;
+            display: inline-block;
+        }
     }
 }
 
@@ -230,22 +246,11 @@ footer {
             }
         }
     }
+
     #subscribe {
         button {
             width: 236px;
-            margin-top: 10px;
+            margin-top: 20px;
         }
     }
 }
-
-@media (max-width: 980px) {
-    #tour {
-        text-align: center;
-        .tour-card {
-            display: inline-block;
-            float: none;
-        }
-    }
-}
-
-
